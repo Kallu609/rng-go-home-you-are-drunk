@@ -1,0 +1,20 @@
+{
+  "name": "rng-go-home-you-are-drunk",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --transpileOnly src/app.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.17",
+    "@types/puppeteer": "^1.11.1",
+    "prettier": "^1.15.3",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "puppeteer": "^1.11.0"
+  }
+}
