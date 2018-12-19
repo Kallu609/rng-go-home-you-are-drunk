@@ -96,9 +96,8 @@ async function randInt(min: number, max: number) {
   await browser.close();
 
   const content = await readFile(TEMP_FILE, 'utf-8');
+  await unlink(TEMP_FILE);
   const checksum = getChecksum(content);
-
-  unlink(TEMP_FILE);
 
   return Math.floor(random(checksum) * max) + min;
 }
